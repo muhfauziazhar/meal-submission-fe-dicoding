@@ -1,10 +1,10 @@
 class Navigation extends HTMLElement {
-    connectedCallback() {
-        this.render();
-    }
+  connectedCallback() {
+    this.render();
+  }
 
-    render() {
-        this.innerHTML = `
+  render() {
+    this.innerHTML = `
           <nav class="navbar navbar-expand-lg navbar-dark">
             <div class="container-fluid">
               <a class="navbar-brand" href="#">makanapa</a>
@@ -14,7 +14,7 @@ class Navigation extends HTMLElement {
             </div>
           </nav>
         `;
-    }
+  }
 }
 
-customElements.define("meal-nav", Navigation);
+customElements.define('meal-nav', Navigation);

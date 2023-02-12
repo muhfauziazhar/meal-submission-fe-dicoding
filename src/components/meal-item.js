@@ -1,11 +1,11 @@
 class MealItem extends HTMLElement {
-    set meal(meal) {
-        this._meal = meal;
-        this.render();
-    }
+  set meal(meal) {
+    this._meal = meal;
+    this.render();
+  }
 
-    render() {
-        this.innerHTML = `
+  render() {
+    this.innerHTML = `
             <div class="meal-item meal-hover" data-id="${this._meal.idMeal}">
                 <div class="meal-img">
                     <img src="${this._meal.strMealThumb}" alt="food">
@@ -16,7 +16,7 @@ class MealItem extends HTMLElement {
                 </div>
             </div>
         `;
-    }
+  }
 }
 
-customElements.define("meal-item", MealItem);
+customElements.define('meal-item', MealItem);
